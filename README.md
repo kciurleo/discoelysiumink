@@ -46,7 +46,7 @@ The following descriptions are outlined again in `discoelysiumgame.ink`, with ex
 ### Checks
   - \<red\>, \<white\>, or \<locked\> in a choice will provide the appropriate style; locked is best used logically and will override white if both are present.
   - (Since the game doesn't have different styling for the skills listed at the start of checks, you'll have to do that manually here! Include \\ \[ and \\ \] around your skill, which for a white skill, will be replaced with "Locked" if locked.)
-  - <check><end> will provide the correct color for post-skill name checks in the story text.
+  - \<check\>\<end\> will provide the correct color for post-skill name checks in the story text.
   - #CHECK: difficulty-success will provide a check after the speaker for a given difficulty and success status. As with skills, use first three letters (e.g.: tri-suc for "Trivial: Success.")
   - (Either of the above works. The first in combination with the first speaker method is good for when you want to have a one-off funny check (e.g. "Beyond Trivial - Epic Failure"), but note that #CHECK will only work if you use it before a #SPEAKER)
 
@@ -76,10 +76,10 @@ In-text formatting (excluding choices/checks) has both an Ink tag version and a 
 ### Check Failure/Success, Thoughts, Other Pop-ups
 I did not include any other graphics that don't appear directly in-line on the text display in the original game as a matter of personal preference. This includes the flashes for check failures/successes, dice rolls, thoughts completing, etc. 
 
-If you wanted to fiddle with this, a good place to find an example would be lines 266-290 in `main.js`. Here I've defined my own fake html markers that don't get displayed but will be passed along by the Ink compiler. Doing the same, and then running some function to display an image etc. would be a good way to trigger things conditionally. (Ink tags may also be useful, but they can't be changed like variables within ink and cannot be toggled true/false, so depending on how dependent on variables/choices/etc. your game is, they might not cut it.)
+If you wanted to fiddle with this, a good place to find an example would be lines 266-290 in `main.js`. Here I've defined my own fake html markers that don't get displayed but will be passed along by the Ink compiler. Doing the same, and then running some function to display an image etc. would be a good way to trigger things conditionally. (Ink tags may also be useful, but they can't be changed like variables within Ink and cannot be toggled true/false, so depending on how dependent on variables/choices/etc. your game is, they might not cut it.)
 
 ## Future Additions
-As of right now, this template (like many instances of interactive fiction) is not the friendliest to a screen reader. Images are currently basically described, and the screen is navigable with a keyboard, but reading will go from the start of the on-screen text instead of the most recent paragraph. This is something I plan to continue work on, though it'll require more research on my end. This is somewhat mitigated by clearing the screen often or after every
+As of right now, this template (like many instances of interactive fiction) is not the friendliest to a screen reader. Images are currently basically described, and the screen is navigable with a keyboard, but reading will go from the start of the on-screen text instead of the most recent paragraph. This is something I plan to continue work on, though it'll require more research on my end. This is somewhat mitigated by clearing the screen often or after every choice.
 
 The scrollbar will also hopefully be styled to look more like the one in Disco Elysium at some point. To be honest, I worked on it for too long to no avail and decided it's a problem for future me who will hopefully know more CSS.
 
