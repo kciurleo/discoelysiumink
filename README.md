@@ -83,6 +83,10 @@ As of right now, this template (like many instances of interactive fiction) is n
 
 The scrollbar will also hopefully be styled to look more like the one in Disco Elysium at some point. To be honest, I worked on it for too long to no avail and decided it's a problem for future me who will hopefully know more CSS.
 
+I also had thoughts about making the background customizable (and changeable by Ink tag to suit different knots) instead of black, but I didn't think that'd be used often enough, especially in fanworks; if requests prove me wrong, I'll add it in.
+
+If you have a suggestion, bug report, etc, please don't hesitate to reach out to me,!
+
 ## Attribution
 This template is of course based off of [Disco Elysium](https://discoelysium.com/) and uses [Inkle's Ink](https://www.inklestudios.com/ink/).
 The [portraits](https://imgur.com/a/NTCGqdZ), [backgrounds](https://drive.google.com/drive/folders/12Tt0bJSNit37yg1rqhJKcRSiEuljzH3Y?usp=sharing), and [favicon](https://www.stickpng.com/img/icons-logos-emojis/tech-companies/disco-elysium-app-icon) come directly from the game, and the [fonts](https://www.reddit.com/r/DiscoElysium/comments/jlaubn/name_of_the_text_font_used_in_disco_elysium/) likewise are pulled from or inspired by the original game.
