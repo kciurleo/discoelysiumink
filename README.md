@@ -32,7 +32,7 @@ The following descriptions are outlined again in `discoelysiumgame.ink`, with ex
   - "Skill" here as a variable for a tag (e.g. #SPEAKER or #PORTRAIT) means the first three letters of the skill in lowercase (e.g. ele for electrochemistry, esp for esprit de corps)
 
 ### Choices
-  - <you> should be used before all "you" choices to force the appropriate style, except for skill checks.
+  - \<you\> should be used before all "you" choices to force the appropriate style, except for skill checks.
   - ▸ as a choice will provide a caps-locked continue popup.
   - ■ as a choice will provide a caps-locked end popup.
   - <read> in a choice will dim the choice; best used logically
@@ -51,7 +51,7 @@ The following descriptions are outlined again in `discoelysiumgame.ink`, with ex
   - (Either of the above works. The first in combination with the first speaker method is good for when you want to have a one-off funny check (e.g. "Beyond Trivial - Epic Failure"), but note that #CHECK will only work if you use it before a #SPEAKER)
 
 ### Tasks  
-  - <task><end> will provide the correct color for tasks, thoughts, items, and XP.
+  - \<task\>\<end\> will provide the correct color for tasks, thoughts, items, and XP.
   - #CLASS: task will do the same thing
   - (Use the first if you want only part of a paragraph to be formatted accordingly.)
 
