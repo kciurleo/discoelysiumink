@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+body {
+    font-family: 'Sina Nova', serif;
+    font-weight: medium;
+    background: black;
+    counter-reset: section;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 20pt;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Dobra Black', serif;
+    text-transform: uppercase;
+    font-weight: medium;
+}
+
+h2 {
+    font-size: 15pt;
+    font-family: 'Sina Nova', serif;
+    font-weight: lighter;
+    color: #8b8576;
+}
+
+.header {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+h3.written-in-ink {
+    font-size: 9pt;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 700;
+    position: fixed;
+    /*display: block;*/
+    width: 100%;
+    background: black;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    top: 0;
+    display: none; /*I wanted to hide this for aesthetic purposes!*/
+}
+
+/* Seems necessary to make iframes work on itch.io on mobile iOS :-( */
+.outerContainer {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    display: block;
+    max-width: 350px;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0 auto;
+    padding: 70px;
+    padding-top: 4em;
+    background-image: url("images/backgroundtrans.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    background-blend-mode: multiply;
+    text-indent: -20px;
+
+}
+
+p {
+    font-size: 14pt;
+    color: #c5c9b5;
+    line-height: 1.3em;
+    font-weight: medium;
+}
+
+a {
+    color: #be3c1c;
+    transition: color 0.6s;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: white;
+    transition: color 0.1s;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.container .hide {
+    opacity: 0.0;
+}
+
+.container .invisible {
+    display: none;
+}
+
+.container * {
+    opacity: 1.0;
+    transition: opacity 1.0s;
+}
+
+p.choice {
+    font-size: 14pt;
+    line-height: 1.3em;
+    color: #be3c1c;
+    font-weight: medium;
+    display: block;
+    margin-top: -1em;
+}
+
+p.choice:before {
+    font-size: 14pt;
+    font-weight: medium;
+    color: white;
+    counter-increment: section;
+    content: "" counter(section) ". - ";
+}
+
+/* first choice */
+:not(.choice) + .choice {
+    margin-top: .5em; 
+}
+
+
+p.choice a {
+    font-size: 14pt;
+}
+
+/* Built in class if you want to write:
+     The End # CLASS: end
+*/
+.end {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Start of the Disco Elysium specific classes*/
+body .name {
+    font-weight: medium;
+    font-family: 'Dobra Black', serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+body .psy {
+    font-weight: medium;
+    font-family: 'Dobra Black', serif;
+    color: #705cbb;
+    text-transform: uppercase;
+}
+
+body .fys {
+    font-weight: medium;
+    font-family: 'Dobra Black', serif;
+    color: #c6496B;
+    text-transform: uppercase;
+}
+
+body .int {
+    font-weight: medium;
+    font-family: 'Dobra Black', serif;
+    color: #6cc6ce;
+    text-transform: uppercase;
+}
+
+body .mot {
+    font-weight: medium;
+    font-family: 'Dobra Black', serif;
+    color: #E4b934;
+    text-transform: uppercase;
+}
+
+body .check {
+    color: #7e796a;
+}
+
+body .task {
+    color: #86a979;
+}
+
+/* Text you've read already */
+body .greyed {
+    opacity: 0.5;
+}
+
+/* Continue button */
+body .continue a {
+    background-color: #be3c1c;
+    width: 110%;
+    margin-left: -20px;
+    text-indent: 20px;
+    display: block;
+    font-family: 'dosis', sans-serif;
+    color: white !important; 
+    font-weight: 100;
+    font-size: 18pt;
+    line-height: 1.7em;
+    text-transform: uppercase;
+}
+
+/* Red check options */
+p.red{
+    width: 110%;
+    min-height: 1.3em;
+    text-indent: 0px;
+    margin-left: -20px;
+    margin-top: -1em;
+    background-color: #d8431c;
+    display: block;
+}
+
+p.red a {
+    font-size: 14pt;
+    color: #342b28;
+    line-height: 1.3em;
+    font-weight: medium;
+
+}
+
+p.red:hover a {
+    color: white;
+}
+
+/* White check options */
+p.white{
+    width: 110%;
+    min-height:1.3em;
+    text-indent: 0px;
+    margin-left: -20px;
+    margin-top: -1em;
+    background-color: #cbc5b7;
+    display: block;
+}
+
+p.white a {
+    font-size: 14pt;
+    color: #373735;
+    line-height: 1.3em;
+    font-weight: medium;
+
+}
+
+p.white:hover {
+    background-color: #858070;
+}
+
+p.white:hover a {
+    color: white;
+}
+
+/* Locked white check options*/
+p.locked{
+    width: 110%;
+    min-height:1.3em;
+    text-indent: 0px;
+    margin-left: -20px;
+    margin-top: -1em;
+    background-color: #d5cfbf;
+    display: block;
+}
+
+p.locked a {
+    font-size: 14pt;
+    color: #8b8576 !important;
+    line-height: 1.3em;
+    font-weight: medium;
+    pointer-events: none;
+}
+
+/* For the choices you've already picked */
+body .read a {
+    color: #8d331a !important;
+}
+
+.read:hover a {
+    color: white !important;
+    transition: color 0.1s;
+}
+
+/* For "you" paragraphs */
+
+.you:before {
+    content: "YOU — "
+}
+
+
+/* Photos */
+.photoContainer {
+    display: none;
+    justify-content:center;
+}
+
+.charframe {
+    width: 150px;
+    position: absolute;
+    margin-left: -575px;
+    margin-top: 124px;
+}
+
+.charphoto {
+    width: 125px;
+    position: absolute;
+    margin-left: -573px;
+    margin-top: 140px;
+}
+
+
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: white;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    background-clip: padding-box;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: white;
+    height: 50px;
+    border-radius:100px;
+}
