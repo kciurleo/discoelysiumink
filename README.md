@@ -1,7 +1,7 @@
 # Disco Elysium Inkjs Template
 ![Title page of game](screenshots/title.png)
 
-A Disco Elysium-themed template for Inkle's Inkjs port. You can access a working version of the template at INSERT LINK HERE.
+A Disco Elysium-themed template for Inkle's Inkjs port. You can access a working version of the template on [itch.io](https://isolatedphenomenon.itch.io/discoelysiumtestgame).
 
 ## Description
 This repository is a proof-of-concept webpage game styled after Disco Elysium and written in Ink. It is intended as a template for others to use to create their own fan games in Ink.
@@ -35,17 +35,17 @@ The following descriptions are outlined again in `discoelysiumgame.ink`, with ex
   - \<you\> should be used before all "you" choices to force the appropriate style, except for skill checks.
   - ▸ as a choice will provide a caps-locked continue popup.
   - ■ as a choice will provide a caps-locked end popup.
-  - <read> in a choice will dim the choice; best used logically
+  - \<read\> in a choice will dim the choice; best used logically
 
 ### Speakers
-  - <name><end> will provide a caps-locked white name.
-  - <int><end>, <psy><end>, <fys><end>, and <mot><end> will provide a caps-locked skill of the appropriate color.
+  - \<name\>\<end\> will provide a caps-locked white name.
+  - \<int\><\end\>, \<psy\>\<end\>, \<fys\>\<end\>, and \<mot\>\<end\> will provide a caps-locked skill of the appropriate color.
   - #SPEAKER: speaker will provide a caps-locked white name and hyphen, and #SPEAKER: skill will provide a caps-locked skill of the appropriate color
   - (Either of the above works for both. I decided to keep them in case people wanted to customize skills here, like PERCEPTION (HEARING) for example; if you want completely new skills and want use of the tags, edit main.js.)
 
 ### Checks
-  - <red>, <white>, or <locked> in a choice will provide the appropriate style; locked is best used logically and will override white if both are present.
-  - (Since the game doesn't have different styling for the skills listed at the start of checks, you'll have to do that manually here! Include \[ and\] around your skill, which for a white skill, will be replaced with "Locked" if locked.)
+  - \<red\>, \<white\>, or \<locked\> in a choice will provide the appropriate style; locked is best used logically and will override white if both are present.
+  - (Since the game doesn't have different styling for the skills listed at the start of checks, you'll have to do that manually here! Include \\ \[ and \\ \] around your skill, which for a white skill, will be replaced with "Locked" if locked.)
   - <check><end> will provide the correct color for post-skill name checks in the story text.
   - #CHECK: difficulty-success will provide a check after the speaker for a given difficulty and success status. As with skills, use first three letters (e.g.: tri-suc for "Trivial: Success.")
   - (Either of the above works. The first in combination with the first speaker method is good for when you want to have a one-off funny check (e.g. "Beyond Trivial - Epic Failure"), but note that #CHECK will only work if you use it before a #SPEAKER)
@@ -61,7 +61,7 @@ The following descriptions are outlined again in `discoelysiumgame.ink`, with ex
 
 ## Customization
 ### Simple Customization
-In-text formatting (excluding choices/checks) has both an Ink tag version and a custom markup version. These markup versions (e.g. <int>Wisdom<end> to provide the styling of an intelligence speaker) are intended for one-off usage or for coders proficient in Ink who don't want to interact with javascript.
+In-text formatting (excluding choices/checks) has both an Ink tag version and a custom markup version. These markup versions (e.g. \<int\>Wisdom\<end\> to provide the styling of an intelligence speaker) are intended for one-off usage or for coders proficient in Ink who don't want to interact with Javascript.
 
 ### Add Speaker Portraits
   - To add more speaker portraits, upload an image of the speaker to the images folder
@@ -87,4 +87,4 @@ The scrollbar will also hopefully be styled to look more like the one in Disco E
 This template is of course based off of [Disco Elysium](https://discoelysium.com/) and uses [Inkle's Ink](https://www.inklestudios.com/ink/).
 The [portraits](https://imgur.com/a/NTCGqdZ), [backgrounds](https://drive.google.com/drive/folders/12Tt0bJSNit37yg1rqhJKcRSiEuljzH3Y?usp=sharing), and [favicon](https://www.stickpng.com/img/icons-logos-emojis/tech-companies/disco-elysium-app-icon) come directly from the game, and the [fonts](https://www.reddit.com/r/DiscoElysium/comments/jlaubn/name_of_the_text_font_used_in_disco_elysium/) likewise are pulled from or inspired by the original game.
 
-This would not exist without the other IF frameworks [made](https://github.com/apepers/DiscoElysiumTwineMacros) or [being made](https://haunthouse.tumblr.com/post/698460178938478592/hmmm-i-kinda-want-to-write-some-disco-elysium) for other platforms and languages, and a huge shoutout to everyone else making fan games!
+This would not exist without the other IF frameworks [made](https://github.com/apepers/DiscoElysiumTwineMacros) or [being made](https://madnessofmen.tumblr.com/post/698434383660630017/hmmm-i-kinda-want-to-write-some-disco-elysium) for other platforms and languages, and a huge shoutout to everyone else making fan games!
