@@ -3,6 +3,8 @@
 
 A Disco Elysium-themed template for Inkle's Inkjs port. You can access a working version of the template on [itch.io](https://isolatedphenomenon.itch.io/discoelysiumtestgame).
 
+Update 12/12/2022: Version 2 in the works; as I used this for a project, I've realized how to improve features and will publish those changes in the new year.
+
 ## Description
 This repository is a proof-of-concept webpage game styled after Disco Elysium and written in Ink. It is intended as a template for others to use to create their own fan games in Ink.
 
